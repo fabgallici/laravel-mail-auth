@@ -11358,7 +11358,6 @@ a.text-dark:focus {
 
 body {
   background: lightgrey;
-  color: white;
   padding: 5px 20px;
 }
 
@@ -11395,6 +11394,7 @@ body .hide {
 
 body .content {
   margin: 20px;
+  color: white;
 }
 
 body .content .category {

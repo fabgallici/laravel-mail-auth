@@ -9,7 +9,7 @@
 
 body {
   background: lightgrey;
-  color: white;
+  
   padding: 5px 20px;
   
   a {
@@ -44,7 +44,8 @@ body {
   
   .content {
     margin: 20px;
-  
+    color: white;
+    
     .category {
       background: grey;
       border-radius: 15px;

@@ -17,7 +17,10 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/', 'MainController@index') -> name('home.index');
-Route::get('/posts/show/{id}', 'MainController@postShow') -> name('post.show');
+// Route::get('/posts/show/{id}', 'MainController@postShow') -> name('post.show');
+Route::get('/posts/show/{id}', 'HomeController@postShow') -> name('post.show');
+
+
 Route::get('/post/edit/{id}', 'MainController@postEdit') -> name('post.edit');
 Route::post('post/edit/{id}', 'MainController@postUpdate') -> name('post.update');
 Route::get('post/delete/{id}', 'MainController@postDelete') -> name('post.delete');
