@@ -16,7 +16,9 @@
         @auth
           {{ Auth::user() -> name }}
         @else
+        <a href="{{ route('login') }}">
           (GUEST)
+        </a>        
         @endauth
       </h1>
     </a>
