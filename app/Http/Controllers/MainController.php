@@ -66,7 +66,7 @@ class MainController extends Controller
         // $posts = $category->posts -> each(function($post) {
         //     $post -> delete();
         // });
-        $category -> posts() -> delete();
+        $category -> posts() -> delete();   //non necessario se nella tab fk ->onDelete('cascade)
         $category -> delete();
 
         // Mail::to("prova@mail.com")->send(new DBActionDelete());
